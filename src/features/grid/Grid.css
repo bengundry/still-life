@@ -1,5 +1,5 @@
 .entry-grid {
-    margin: 30px 30px 10px 120px;
+    margin: 30px 30px 12px 120px;
     table-layout: auto;
     border-collapse: collapse;
 }
@@ -31,4 +31,31 @@
     flex-direction: row;
     justify-content: end;
     margin: 0 30px;
+}
+
+.pattern-info {
+    width: 300px;
+    background: #EEE;
+    border: black solid 1px;
+    margin: 30px 0;
+    padding: 6px;
+}
+
+.heading {
+    font: bold large sans-serif;
+}
+
+.label-value {
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    font: bold medium sans-serif;
+    width: 75%;
+}
+
+.value {
+    font: medium sans-serif;
+    width: 25%;
 }
