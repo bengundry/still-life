@@ -18,8 +18,28 @@
     font-weight: 500;
 }
 
+.cell-stable3 {
+    background: #060;
+}
+
+.cell-stable2 {
+    background: #066;
+}
+
+.cell-unstable {
+    background: #006;
+}
+
+.cell-overloaded {
+    background: #600;
+}
+
 .cell-on {
     background: #000;
+}
+
+.cell-candidate {
+    background: #EFE;
 }
 
 .cell-off {

@@ -49,12 +49,13 @@ export default function Grid() {
                     <h2>Information</h2>
                     <DisplayText label='Width' text={meta.width} />
                     <DisplayText label='Height' text={meta.height} />
-                    <DisplayText label='Quarter Rotation' boolean={meta.hasQuarterRotation} />
-                    <DisplayText label='Half Rotation' boolean={meta.hasHalfRotation} />
-                    <DisplayText label='Vertical Reflection' boolean={meta.hasRefV} />
-                    <DisplayText label='Horizontal Reflection' boolean={meta.hasRefH} />
-                    <DisplayText label='Diagonal Reflection' boolean={meta.hasRefD} />
-                    <DisplayText label='Anti-diagonal Reflection' boolean={meta.hasRefA} />
+                    <DisplayText label='Stable' boolean={meta.isStable} />
+                    <DisplayText label='Quarter Rotation' boolean={meta.symmetry.quarter} />
+                    <DisplayText label='Half Rotation' boolean={meta.symmetry.half} />
+                    <DisplayText label='Vertical Reflection' boolean={meta.symmetry.vertical} />
+                    <DisplayText label='Horizontal Reflection' boolean={meta.symmetry.horizontal} />
+                    <DisplayText label='Diagonal Reflection' boolean={meta.symmetry.diagonal} />
+                    <DisplayText label='Anti-diagonal Reflection' boolean={meta.symmetry.antiDiagonal} />
                     <h4>Variants</h4>
                     {meta.variants.map((v,i) => (<div key={i}>{v}</div>))}
                 </div>
